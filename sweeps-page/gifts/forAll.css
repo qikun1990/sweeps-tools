@@ -1,0 +1,5 @@
+/* d */
+#app_common_modal_close, #error_handler_overlay_close{
+    line-height:26px!important;
+    box-sizing: border-box;
+}
