@@ -1,5 +1,7 @@
 package com.tangtang.controller;
 
+import java.util.Map;
+
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
@@ -10,8 +12,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.tangtang.dao.UserAdInfoRepository;
 import com.tangtang.dao.UserBaseInfoRepository;
@@ -29,12 +33,12 @@ public class IndexController {
 
 	@RequestMapping(value = "/userbaseinfo", method = RequestMethod.POST)
 	@ResponseBody
-	public String userBaseInfo(@RequestBody JSONObject jsonParms) {
-		System.out.println("userbaseinfo: " + jsonParms.toJSONString());
+	public String userBaseInfo(@RequestParam Map<String, String> parms) {
+		System.out.println("userbaseinfo: " + parms.toString());
 		try {
 			UserBaseInfo userBaseInfo = new UserBaseInfo();
 			// 数据转换
-			userBaseInfo = cvtJson2UserBaseInfo(jsonParms);
+			userBaseInfo = cvtJson2UserBaseInfo(parms);
 			// 保存数据
 			userBaseInfoRepository.save(userBaseInfo);
 		} catch (Exception e) {
@@ -81,10 +85,11 @@ public class IndexController {
 		}
 	}
 
-	private static UserBaseInfo cvtJson2UserBaseInfo(JSONObject jsonParms) {
+	private static UserBaseInfo cvtJson2UserBaseInfo(Map<String,String> parms) {
 		UserBaseInfo userBaseInfo = new UserBaseInfo();
 		try {
-			userBaseInfo = JSONObject.parseObject(jsonParms.toJSONString(), UserBaseInfo.class);
+			String jsonString = JSON.toJSONString(parms);
+			userBaseInfo = JSONObject.parseObject(jsonString, UserBaseInfo.class);
 			return userBaseInfo;
 		} catch (Exception e) {
 			e.printStackTrace();
