@@ -9,7 +9,6 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -85,7 +84,7 @@ public class IndexController {
 		}
 	}
 
-	private static UserBaseInfo cvtJson2UserBaseInfo(Map<String,String> parms) {
+	private static UserBaseInfo cvtJson2UserBaseInfo(Map<String, String> parms) {
 		UserBaseInfo userBaseInfo = new UserBaseInfo();
 		try {
 			String jsonString = JSON.toJSONString(parms);
@@ -97,7 +96,7 @@ public class IndexController {
 		return userBaseInfo;
 	}
 
-	private static UserAdInfo cvtJson2UserAdInfo(Map<String,String> parms) {
+	private static UserAdInfo cvtJson2UserAdInfo(Map<String, String> parms) {
 		UserAdInfo userAdInfo = new UserAdInfo();
 		try {
 			String jsonString = JSON.toJSONString(parms);
