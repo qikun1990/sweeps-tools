@@ -15,6 +15,9 @@ public class UserAdInfo implements Serializable, Cloneable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	private Integer id;
+	
+	@Column(name = "subid")
 	private String subid;
 
 	@Column(name = "billing_same_as_shipping")

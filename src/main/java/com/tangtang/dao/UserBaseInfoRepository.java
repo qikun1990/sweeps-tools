@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.tangtang.po.UserBaseInfo;
 
 @Repository
-public interface UserBaseInfoRepository extends JpaRepository<UserBaseInfo, String> {
+public interface UserBaseInfoRepository extends JpaRepository<UserBaseInfo, Integer> {
 
 }
