@@ -51,12 +51,12 @@ public class IndexController {
 
 	@RequestMapping(value = "/useradinfo", method = RequestMethod.POST)
 	@ResponseBody
-	public String userAdInfo(@RequestBody JSONObject jsonParms) {
-		System.out.println("useradinfo: " + jsonParms.toJSONString());
+	public String userAdInfo(@RequestParam Map<String, String> parms) {
+		System.out.println("useradinfo: " + parms);
 		try {
 			UserAdInfo userAdInfo = new UserAdInfo();
 			// 数据转换
-			userAdInfo = cvtJson2UserAdInfo(jsonParms);
+			userAdInfo = cvtJson2UserAdInfo(parms);
 			// 保存数据
 			userAdInfoRepository.save(userAdInfo);
 			// 转化回传
@@ -97,10 +97,11 @@ public class IndexController {
 		return userBaseInfo;
 	}
 
-	private static UserAdInfo cvtJson2UserAdInfo(JSONObject jsonParms) {
+	private static UserAdInfo cvtJson2UserAdInfo(Map<String,String> parms) {
 		UserAdInfo userAdInfo = new UserAdInfo();
 		try {
-			userAdInfo = JSONObject.parseObject(jsonParms.toJSONString(), UserAdInfo.class);
+			String jsonString = JSON.toJSONString(parms);
+			userAdInfo = JSONObject.parseObject(jsonString, UserAdInfo.class);
 			return userAdInfo;
 		} catch (Exception e) {
 			e.printStackTrace();

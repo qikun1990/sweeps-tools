@@ -18,7 +18,7 @@ public class UserAdInfo implements Serializable, Cloneable {
 	private String subid;
 
 	@Column(name = "billing_same_as_shipping")
-	private Boolean billingSameAsShipping;
+	private String billingSameAsShipping;
 
 	@Column(name = "billing_first_name")
 	private String billingFirstName;
@@ -67,11 +67,11 @@ public class UserAdInfo implements Serializable, Cloneable {
 		this.subid = subid;
 	}
 
-	public Boolean getBillingSameAsShipping() {
+	public String getBillingSameAsShipping() {
 		return billingSameAsShipping;
 	}
 
-	public void setBillingSameAsShipping(Boolean billingSameAsShipping) {
+	public void setBillingSameAsShipping(String billingSameAsShipping) {
 		this.billingSameAsShipping = billingSameAsShipping;
 	}
 
