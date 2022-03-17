@@ -343,46 +343,7 @@ input.no-error, select.no-error {
    <script src="./cb-util-pkg.js" type="text/javascript"></script>
 -->
 <script type="text/javascript">
-/*
-startTimer();
-function startTimer() {
-    
-    
-    var min2 = document.getElementById("min2").innerText;
-    var sec1 = document.getElementById("sec1").innerText;
-    var sec2 = document.getElementById("sec2").innerText;
 
-    if(min2==0 && sec1==0 && sec2==0)
-    {
-        //document.getElementById("error").innerHTML = "TIme expired.. " ;
-        return false;
-    }
-
-    if(sec2==0)
-    {
-        sec2 = 9;
-        if(sec1==0)
-        {
-            sec1 = 5;
-            min2 = min2 - 1;
-        }
-        else
-        {
-            sec1--;
-        }
-    }
-    else
-    {
-        sec2--;
-    }
-
-    document.getElementById("min2").innerHTML = min2 ;
-    document.getElementById("sec1").innerHTML = sec1 ;
-    document.getElementById("sec2").innerHTML = sec2 ;
-
-    setTimeout(startTimer, 1000);
-}
-*/
 //STATE REMOVE CODE
 $(function() {
     removeState();
