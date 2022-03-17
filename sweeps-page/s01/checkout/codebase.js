@@ -475,7 +475,7 @@ var cb = (function($) {
                 $(formOptions.ajaxLoader.div).fadeIn(formOptions.ajaxLoader.timeInOut);
             },
             success: function(data) {
-                redirectToOder('../offer/index.html?subid='+subid); // TODO
+                redirectToOder('../other/index.php?subid='+subid); // TODO
                 // performAfterResponseTasks(data, formElement, formOptions);
             },
             complete: function() {}
