@@ -72,14 +72,14 @@ public class IndexController {
 	private void postback(String subid) {
 		try {
 			HttpClient client = HttpClients.createDefault();
-			String url = "https://www.nycseller.com/1143046/postback?sub_id=" + subid;
-			System.out.println("postback2Keitaro: url=" + url);
+			String url = "https://org.rangextd.buzz/click.php?cnv_id=" + subid;
+			System.out.println("postback2Binom: url=" + url);
 			HttpGet get = new HttpGet(url);
 			HttpResponse res = client.execute(get);
 			String response = EntityUtils.toString(res.getEntity());
-			System.out.println("postback2Keitaro done " + response);
+			System.out.println("postback2Binom done " + response);
 		} catch (Exception e) {
-			System.out.println("转化回传给Keitaro时出现异常：");
+			System.out.println("转化回传给Binom时出现异常：");
 			e.printStackTrace();
 		}
 	}
