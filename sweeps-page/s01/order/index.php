@@ -343,6 +343,7 @@ input.no-error, select.no-error {
    <script src="./cb-util-pkg.js" type="text/javascript"></script>
 -->
 <script type="text/javascript">
+/*
 startTimer();
 function startTimer() {
     
@@ -381,6 +382,7 @@ function startTimer() {
 
     setTimeout(startTimer, 1000);
 }
+*/
 //STATE REMOVE CODE
 $(function() {
     removeState();
