@@ -101,7 +101,7 @@ var modalOptions = {
           <div class="survey_button bq2" data-bq="4"> 50+ </div>
         </div>
         <div id="q3">
-          <p class="question"><strong>Question 3 of 4:</strong> How do you rate Amazon services in United States? </p>
+          <p class="question"><strong>Question 3 of 4:</strong> How do you rate our services in United States? </p>
           <div class="survey_button bq3" data-bq="1"> Very good </div>
           <div class="survey_button bq3" data-bq="2"> Unbelievable </div>
           <div class="survey_button bq3" data-bq="3"> OK </div>
