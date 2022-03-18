@@ -342,7 +342,17 @@ input.no-error, select.no-error {
    <script src="./outro.js" type="text/javascript"></script>
    <script src="./cb-util-pkg.js" type="text/javascript"></script>
 -->
-
+<script type="text/javascript">
+var brand_country ="United States";
+var dayNames = Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+var monthNames = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+var minutos_y = "minutes and ";
+var segundos = "seconds";
+var modalOptions = {
+	backdrop: 'static',
+	keyboard: false
+	};
+</script>
 <div class="timer" hidden>
          <div class="timer__box" id="min1">0</div>
          <div class="timer__box" id="min2">4</div>
