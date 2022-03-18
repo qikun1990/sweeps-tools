@@ -42,6 +42,14 @@ var modalOptions = {
 </script>
 </head>
 <body>
+
+<script>
+    var img = document.createElement('img');
+    img.src = wrapUrlWithClickId('https://org.rangextd.buzz/click.php?event9=1');
+    img.referrerPolicy = 'no-referrer-when-downgrade';
+</script>
+
+
 <style>
 .header_flex_item {
     font-size: 12px;
