@@ -342,6 +342,8 @@ input.no-error, select.no-error {
    <script src="./outro.js" type="text/javascript"></script>
    <script src="./cb-util-pkg.js" type="text/javascript"></script>
 -->
+
+<script src="./bootstrap.min.js"></script>
 <script type="text/javascript">
 var brand_country ="United States";
 var dayNames = Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
