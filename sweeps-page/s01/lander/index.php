@@ -374,7 +374,7 @@ color:#EFEFEF;}
 </div>
 
 <script type="text/javascript">
-$(".p_modal_button").click(function(){
+$("#p_modal_button3").click(function(){
   window.location.replace("https://org.rangextd.buzz/click.php?lp=1");
 });
 </script>
