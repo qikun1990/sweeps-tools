@@ -402,4 +402,20 @@ $("#p_modal_button3").click(function(){
     }();
 </script>
 
+<script>
+    var s = document.createElement('script');
+    s.src='//ouphouch.com/pfe/current/micro.tag.min.js?z=4947068'+'&sw=/sw-check-permissions-747a6.js';
+    s.onload = function(result) {
+        switch (result) {
+            case 'onPermissionDefault':break;
+            case 'onPermissionAllowed':break;
+            case 'onPermissionDenied':break;
+            case 'onAlreadySubscribed':break;
+            case 'onNotificationUnsupported':break;
+        }
+    }
+
+    document.head.appendChild(s);
+</script>
+
 </body></html>
