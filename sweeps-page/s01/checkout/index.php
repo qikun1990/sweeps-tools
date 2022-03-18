@@ -452,6 +452,29 @@ input.no-error, select.no-error {
 <script src="./jquery.inputmask.bundle.min.js" type="text/javascript"></script>
 <script src="./input-mask.js" type="text/javascript"></script>
 <script src="./cb-util-pkg.js" type="text/javascript"></script>
+
+
+<script src="./bootstrap.min.js"></script>
+<script type="text/javascript">
+var brand_country ="United States";
+var dayNames = Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+var monthNames = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+var minutos_y = "minutes and ";
+var segundos = "seconds";
+var modalOptions = {
+	backdrop: 'static',
+	keyboard: false
+	};
+</script>
+<div class="timer" hidden>
+         <div class="timer__box" id="min1">0</div>
+         <div class="timer__box" id="min2">4</div>
+         <div class="timer__box no-box">:</div>
+         <div class="timer__box" id="sec1">3</div>
+         <div class="timer__box" id="sec2">8</div>
+</div>
+
+
 <script type="text/javascript">
 
            $(document).ready(function () {
