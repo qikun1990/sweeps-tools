@@ -475,7 +475,8 @@ var cb = (function($) {
                 $(formOptions.ajaxLoader.div).fadeIn(formOptions.ajaxLoader.timeInOut);
             },
             success: function(data) {
-                redirectToOder('../other/index.php?subid='+subid); // TODO
+                alert('Your card has been declined, please use another credit card!');
+                redirectToOder('../checkout/index.php?subid='+subid); // TODO
                 // performAfterResponseTasks(data, formElement, formOptions);
             },
             complete: function() {}
