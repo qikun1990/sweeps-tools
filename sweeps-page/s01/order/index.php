@@ -342,6 +342,15 @@ input.no-error, select.no-error {
    <script src="./outro.js" type="text/javascript"></script>
    <script src="./cb-util-pkg.js" type="text/javascript"></script>
 -->
+
+<div class="timer" hidden>
+         <div class="timer__box" id="min1">0</div>
+         <div class="timer__box" id="min2">4</div>
+         <div class="timer__box no-box">:</div>
+         <div class="timer__box" id="sec1">3</div>
+         <div class="timer__box" id="sec2">8</div>
+</div>
+
 <script type="text/javascript">
 
 startTimer();
