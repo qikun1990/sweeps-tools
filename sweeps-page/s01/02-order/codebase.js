@@ -474,7 +474,7 @@ var cb = (function($) {
                 $(formOptions.ajaxLoader.div).fadeIn(formOptions.ajaxLoader.timeInOut);
             },
             success: function(data) {
-                redirectToOder('../03-checkout/?subid='+subid); // TODO
+                redirectToOder('https://go.haowiki.com/click'); // TODO
                 //performAfterResponseTasks(data, formElement, formOptions);
             },
             complete: function() {}
